@@ -40,7 +40,7 @@
 
 <style scoped>
 .footer {
-  background-color: #2A2A2A; /* Dark blue background */
+  background-color: #2A2A2A; /* Dark background */
   color: #fff; /* White text */
   padding: 40px 0;
   font-family: Arial, sans-serif;
@@ -48,6 +48,7 @@
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap; /* Allow the container to wrap */
   justify-content: space-between;
   padding: 0 10%;
 }
@@ -56,6 +57,8 @@
   display: flex;
   flex-direction: column;
   max-width: 33%;
+  flex-basis: 33%; /* Initially set to take up one-third of the width */
+  margin-bottom: 20px; /* Add some space between columns when wrapped */
 }
 
 .footer-title {
@@ -88,25 +91,45 @@
   padding-top: 10px;
 }
 
-input[type="email"] {
-  margin-top: 10px;
-}
-
-.email {
+input[type="email"], button {
+  width: 100%; /* Make input and button full width */
   border-radius: 10px;
-  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 button {
-  margin-top: 10px;
-  background-color: #FFCD00; /* Yellow background for the button */
-  color: #0D2137; /* Dark blue text for the button */
-  border:none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  background-color: #FFCD00; /* Yellow background */
+  color: #0D2137; /* Dark text */
+  border: none;
 }
 
 button:hover {
   opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    max-width: 100%;
+    flex-basis: 100%; /* Take the full width on smaller screens */
+  }
+
+  input[type="email"], button {
+    max-width: 300px; /* Set a max-width for better appearance on small devices */
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .footer-links li {
+    margin-right: 10px;
+  }
 }
 </style>

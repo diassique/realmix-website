@@ -1,0 +1,112 @@
+<template>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3 class="footer-title">Контакты</h3>
+        <p>Широкий ассортимент и высокое качество наших сухих строительных смесей - лучший выбор для вас</p>
+        <p><span class="footer-icon">📍</span> г. Алматы, ул. Спасская 90/1</p>
+        <p><span class="footer-icon">📞</span> +7(707)473-54-51, +7(707)307-41-27</p>
+        <p><span class="footer-icon">✉️</span> real-mix@mail.ru</p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Ссылки</h3>
+        <ul class="footer-links">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#items">Товары</a></li>
+          <li><a href="#about">О Нас</a></li>
+          <li><a href="#shipping">Доставка</a></li>
+          <li><a href="#address">Купить</a></li>
+          <li><a href="#address">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Каталог</h3>
+        <p>Вы можете получить электронную версию нашего каталога, если предоставите ваш e-mail.</p>
+        <input class="email" type="email" placeholder="Ваш E-mail" />
+        <button type="submit">Отправить</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Realmix.kz Все права защищены. Разработано: <a href="https://wa.me/77758802756">dsoft.kz</a></p>
+    </div>
+  </footer>
+</template>
+
+<script>
+  export default {
+    name: 'FooterSection',
+  }
+</script>
+
+<style scoped>
+.footer {
+  background-color: #2A2A2A; /* Dark blue background */
+  color: #fff; /* White text */
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 33%;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+  color: #FFCD00; /* Yellow color for titles */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #2E4053; /* Slightly lighter blue for the border */
+  padding-top: 10px;
+}
+
+input[type="email"] {
+  margin-top: 10px;
+}
+
+.email {
+  border-radius: 10px;
+  height: 40px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #FFCD00; /* Yellow background for the button */
+  color: #0D2137; /* Dark blue text for the button */
+  border:none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+</style>

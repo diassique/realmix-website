@@ -27,7 +27,7 @@ export default {
   max-width: 1200px;
 }
 .hero-section {
-  background-image: url('../assets/bg.jpg');
+  background-image: url('../assets/bg.png');
   background-size: cover;
   background-position: center;
   text-align: left;

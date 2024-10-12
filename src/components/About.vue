@@ -63,20 +63,16 @@ export default {
 .about-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
-
-  grid-template-columns: auto 1fr; /* Image takes the space it needs, text takes the rest */
-  align-items: stretch; /* Stretches the items to fill the container */
 }
 
 .about-image {
-  max-width: 100%;
+  max-width: 300px; /* Reduced from 100% to 300px */
   height: auto;
   margin-right: 20px;
   border-radius: 20px;
-  object-fit: cover; /* Cover the area without stretching the image */
-  grid-row: 1 / -1; /* Makes the image stretch across all rows */
+  object-fit: cover;
 }
 
 .about-text {
@@ -93,10 +89,14 @@ export default {
 
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack image and text on top of each other */
+    flex-direction: column;
+  }
+  .about-image {
+    max-width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
   }
   .about-text {
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 </style>

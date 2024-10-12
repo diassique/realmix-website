@@ -7,7 +7,7 @@
       <div class="contact-information">
         <h2 class="contact-title">Наши контакты</h2>
         <p><strong>Адрес:</strong> Казахстан, г. Алматы, ул. Спасская 90/1</p>
-        <p><strong>Телефон:</strong> +7707 473 54 51</p>
+        <p><strong>Телефон:</strong> +7 702 718-26-14, +7 707 473 54 51</p>
         <p><strong>Почта:</strong> real-mix@mail.ru</p>
       </div>
     </div>

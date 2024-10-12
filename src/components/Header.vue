@@ -47,8 +47,8 @@
             </li>
           </ul>
           <div class="phone-numbers d-none d-lg-block">
+            <div><a href="tel:+77027182614">+7 702 718-26-14</a></div>
             <div><a href="tel:+77074735451">+7 707 473-54-51</a></div>
-            <div><a href="tel:+77073074127">+7 707 307-41-27</a></div>
           </div>
         </div>
       </div>
